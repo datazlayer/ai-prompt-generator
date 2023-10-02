@@ -46,7 +46,3 @@ Generated Prompt: ...
 ## Contributing
 
 Feel free to open issues or PRs regarding any problems found or enhancements you have in mind. 
-
-## License
-
-[MIT](LICENSE)
