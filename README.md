@@ -39,6 +39,7 @@ Generated Prompt: ...
 ## Dependencies
 
 - gradio
+- prompt_toolkit
 - tensorflow
 - transformers
 - torch
