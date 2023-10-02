@@ -1,4 +1,7 @@
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+from prompt_toolkit import prompt
+from prompt_toolkit.shortcuts import print_formatted_text
+from prompt_toolkit.formatted_text import FormattedText
 
 # Load the tokenizer and model
 tokenizer = AutoTokenizer.from_pretrained("merve/chatgpt-prompts-bart-long")
@@ -13,13 +16,14 @@ def generate(prompt):
 
 def main():
     while True:
-        # Get user input from the terminal
-        user_input = input("\033[34mInput a persona (or type '.exit' to quit):\033[0m ")  # Blue text
+        user_input = prompt(
+            FormattedText([('fg:blue', 'Input a persona (or type \'.exit\' to quit): ')]),
+            multiline=False  # Set to True if you want multi-line input
+        )
         if user_input.lower() == '.exit':
             break
-        # Generate a response and print it to the terminal
         response = generate(user_input)
-        print(f"\033[1;31mGenerated Prompt:\033[0m \033[1m{response}\033[0m")  # Red text and bold
+        print_formatted_text(FormattedText([('fg:red', 'Generated Prompt: '), ('bold', response)]))  # Fixed line
 
 if __name__ == "__main__":
     main()
