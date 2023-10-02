@@ -1,4 +1,4 @@
-gradio
-tensorflow
-transformers
-torch
+gradio==3.45.2
+tensorflow==2.14.0
+transformers==4.33.3
+torch==2.0.1
