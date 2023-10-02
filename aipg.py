@@ -14,12 +14,12 @@ def generate(prompt):
 def main():
     while True:
         # Get user input from the terminal
-        user_input = input("Input a persona (or type 'exit' to quit): ")
-        if user_input.lower() == 'exit':
+        user_input = input("\033[34mInput a persona (or type '.exit' to quit):\033[0m ")  # Blue text
+        if user_input.lower() == '.exit':
             break
         # Generate a response and print it to the terminal
         response = generate(user_input)
-        print(f"Generated Prompt: {response}")
+        print(f"\033[1;31mGenerated Prompt:\033[0m \033[1m{response}\033[0m")  # Red text and bold
 
 if __name__ == "__main__":
     main()
