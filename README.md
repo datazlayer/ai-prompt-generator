@@ -27,7 +27,7 @@ Run the script via command line:
 python3 aipg.py
 ```
 
-You will be prompted to input a persona. Enter a persona (e.g., "photographer", "developer") to generate a prompt based on it, or type 'exit' to quit the program.
+You will be prompted to input a persona. Enter a persona (e.g., "photographer", "developer") to generate a prompt based on it, or type '.exit' to quit the program.
 
 Example:
 
