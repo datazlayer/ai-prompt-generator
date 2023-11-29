@@ -17,7 +17,7 @@ def generate(prompt):
 def main():
     while True:
         user_input = prompt(
-            FormattedText([('fg:blue', 'Input a persona (or type \'.exit\' to quit): ')]),
+            FormattedText([('fg:green', 'Input a persona (or type \'.exit\' to quit): ')]),
             multiline=False  # Set to True if you want multi-line input
         )
         if user_input.lower() == '.exit':
