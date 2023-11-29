@@ -24,7 +24,7 @@ pip install -r requirements.txt
 Run the script via command line:
 
 ```bash
-python3 aipg.py
+python aipg.py
 ```
 
 You will be prompted to input a persona. Enter a persona (e.g., "photographer", "developer") to generate a prompt based on it, or type '.exit' to quit the program.
