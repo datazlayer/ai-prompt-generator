@@ -10,7 +10,7 @@ model = AutoModelForSeq2SeqLM.from_pretrained("merve/chatgpt-prompts-bart-long",
 def generate(prompt):
     # Tokenize the input and generate a response
     batch = tokenizer(prompt, return_tensors="pt")
-    generated_ids = model.generate(batch["input_ids"], max_new_tokens=150)
+    generated_ids = model.generate(batch["input_ids"], max_new_tokens=300)
     output = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
     return output[0]
 
