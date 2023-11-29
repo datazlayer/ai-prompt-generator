@@ -9,7 +9,7 @@
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/ai-prompt-generator.git
+git clone https://github.com/theodorods/ai-prompt-generator.git
 cd ai-prompt-generator
 ```
 
