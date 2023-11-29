@@ -13,10 +13,10 @@ git clone https://github.com/theodorods/ai-prompt-generator.git
 cd ai-prompt-generator
 ```
 
-Install the required packages:
+Install the required packages (requires python 3.11):
 
 ```bash
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Usage
